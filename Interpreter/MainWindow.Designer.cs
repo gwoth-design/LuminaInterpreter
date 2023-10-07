@@ -55,6 +55,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.demoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,41 +104,41 @@
             // NewFileBTN
             // 
             this.NewFileBTN.Name = "NewFileBTN";
-            this.NewFileBTN.Size = new System.Drawing.Size(129, 22);
+            this.NewFileBTN.Size = new System.Drawing.Size(180, 22);
             this.NewFileBTN.Text = "New File";
             this.NewFileBTN.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // OpenFileBTN
             // 
             this.OpenFileBTN.Name = "OpenFileBTN";
-            this.OpenFileBTN.Size = new System.Drawing.Size(129, 22);
+            this.OpenFileBTN.Size = new System.Drawing.Size(180, 22);
             this.OpenFileBTN.Text = "Open";
             this.OpenFileBTN.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // SaveFileBTN
             // 
             this.SaveFileBTN.Name = "SaveFileBTN";
-            this.SaveFileBTN.Size = new System.Drawing.Size(129, 22);
+            this.SaveFileBTN.Size = new System.Drawing.Size(180, 22);
             this.SaveFileBTN.Text = "Save";
             this.SaveFileBTN.Click += new System.EventHandler(this.saveCopyAsToolStripMenuItem_Click);
             // 
             // SaveFileAsBTN
             // 
             this.SaveFileAsBTN.Name = "SaveFileAsBTN";
-            this.SaveFileAsBTN.Size = new System.Drawing.Size(129, 22);
+            this.SaveFileAsBTN.Size = new System.Drawing.Size(180, 22);
             this.SaveFileAsBTN.Text = "Save As";
             this.SaveFileAsBTN.Click += new System.EventHandler(this.saveCopyToolStripMenuItem_Click);
             // 
             // SaveCopyBTN
             // 
             this.SaveCopyBTN.Name = "SaveCopyBTN";
-            this.SaveCopyBTN.Size = new System.Drawing.Size(129, 22);
+            this.SaveCopyBTN.Size = new System.Drawing.Size(180, 22);
             this.SaveCopyBTN.Text = "Save Copy";
             // 
             // CloseIDEBTN
             // 
             this.CloseIDEBTN.Name = "CloseIDEBTN";
-            this.CloseIDEBTN.Size = new System.Drawing.Size(129, 22);
+            this.CloseIDEBTN.Size = new System.Drawing.Size(180, 22);
             this.CloseIDEBTN.Text = "Close IDE";
             this.CloseIDEBTN.Click += new System.EventHandler(this.closeIDEToolStripMenuItem_Click);
             // 
@@ -159,50 +160,58 @@
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // findToolStripMenuItem
             // 
             this.findToolStripMenuItem.Name = "findToolStripMenuItem";
-            this.findToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.findToolStripMenuItem.Text = "Find";
+            this.findToolStripMenuItem.Click += new System.EventHandler(this.findToolStripMenuItem_Click);
             // 
             // replaceToolStripMenuItem
             // 
             this.replaceToolStripMenuItem.Name = "replaceToolStripMenuItem";
-            this.replaceToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.replaceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.replaceToolStripMenuItem.Text = "Replace";
+            this.replaceToolStripMenuItem.Click += new System.EventHandler(this.replaceToolStripMenuItem_Click);
             // 
             // runToolStripMenuItem
             // 
@@ -269,18 +278,31 @@
             this.demoToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.demoToolStripMenuItem.Text = "Demo";
             // 
+            // SaveLabel
+            // 
+            this.SaveLabel.AutoSize = true;
+            this.SaveLabel.Location = new System.Drawing.Point(12, 24);
+            this.SaveLabel.Name = "SaveLabel";
+            this.SaveLabel.Size = new System.Drawing.Size(35, 13);
+            this.SaveLabel.TabIndex = 4;
+            this.SaveLabel.Text = "label1";
+            this.SaveLabel.Click += new System.EventHandler(this.SaveLabel_Click);
+            // 
             // LuminaMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 645);
+            this.Controls.Add(this.SaveLabel);
             this.Controls.Add(this.CodeMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "LuminaMainWindow";
             this.Text = "Lumina IDE";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LuminaMainWindow_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LuminaMainWindow_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -317,6 +339,7 @@
         private System.Windows.Forms.ToolStripMenuItem runToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem runProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem debugProgramToolStripMenuItem;
+        private System.Windows.Forms.Label SaveLabel;
     }
 }
 

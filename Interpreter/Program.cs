@@ -21,26 +21,4 @@ namespace Interpreter
         }
 
     }
-
-    public class Interpreter
-    {
-        Terminal terminal = new Terminal();
-        public void StartProgram(string Code)
-        {
-            terminal.Show();
-            string[] Lines = Code.Split('\n');
-            Execute(Lines);
-        }
-
-        private void Execute(string[] Lines)
-        {
-            int i = 0;
-            foreach (string Line in Lines)
-            {
-                i++;
-                Console.WriteLine(Line);
-                terminal.UpdateValue("Yay Line " + i + "Read" + "\n");
-            }
-        }
-    }
 }
